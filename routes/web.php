@@ -31,4 +31,6 @@ Route::middleware('auth')
         Route::get('/', 'AdminController@dashboard')->name('dashboard');
         Route::resource('posts', 'PostController');
         Route::get('users', 'UserController@index')->name('users.index');
+        Route::resource('categories', 'CategoryController');
+        //Route::get('categories', 'CategoryController@index')->name('categories.index');
     });
